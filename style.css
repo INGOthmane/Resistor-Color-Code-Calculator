@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #283149;
+  width: 100vw;
+  height: 100vh;
+}
+h1 {
+  font-size: 3rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #da0463;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.symbole {
+  /* width: 540px;
+  height: 140px; */
+  width: 650px;
+  border: 2px transparent solid;
+  display: flex;
+  position: relative;
+}
+
+#bande1 {
+  /* position: relative; */
+  height: 120px;
+  width: 22px;
+  margin-top: 7px;
+  margin-left: 193px;
+}
+#bande4 {
+  /* position: relative; */
+  height: 96px;
+  width: 21px;
+  margin-top: 19px;
+  margin-left: 170px;
+}
+#bande2 {
+  /* position: relative; */
+  height: 96px;
+  width: 22px;
+  margin-top: 19px;
+  margin-left: -165px;
+}
+#bande3 {
+  /* position: relative; */
+  height: 96px;
+  width: 22px;
+  margin-top: 19px;
+  margin-left: 26px;
+}
+.anneaux {
+  position: absolute;
+  display: flex;
+}
+
+.img_container {
+  position: relative;
+  width: 100%;
+}
+.calcul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px green solid;
+  width: auto;
+}
+.noir {
+  background-color: black;
+  color: white;
+}
+.marron {
+  background-color: maroon;
+}
+.rouge {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.jaune {
+  background-color: yellow;
+}
+.vert {
+  background-color: green;
+}
+.bleu {
+  background-color: blue;
+}
+.violet {
+  background-color: violet;
+}
+.gris {
+  background-color: gray;
+}
+.blanc {
+  background-color: white;
+}
+.or {
+  background-color: gold;
+}
+.argent {
+  background-color: silver;
+}
+
+.sectionResultat {
+  width: 100vw;
+  /* border: 2px black solid; */
+  display: flex;
+}
+
+.resultat {
+  width: auto;
+  border: 1px red solid;
+  /* margin-left: 3px; */
+  padding: 5px;
+}
+.sectionText {
+  color: white;
+}
+span {
+  color: white;
+}
+
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Resistor Color Code Calculator</title>
+  </head>
+  <body>
+    <h1 id="title">Resistor Color Code Calculator</h1>
+    <div class="container">
+      <div class="symbole">
+        <img class="img_container" src="images/4.png" alt="" />
+        <!-- <img src="images/0.png" alt="" /> -->
+        <div class="anneaux">
+          <div id="bande1" class="resistor_bande1"></div>
+          <div id="bande4" class="resistor_bande4"></div>
+          <div id="bande2" class="resistor_bande2"></div>
+          <div id="bande3" class="resistor_bande3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="calcul">
+      <div class="premierCouleur">
+        <label for="anneau1">1er anneau</label>
+        <select name="" id="anneau1" onchange="changeColor()">
+          <option value=""></option>
+          <option class="opt noir" id="couleurAnneau1" value="0">
+            <button>0 Noir</button>
+          </option>
+          <option class="opt marron" id="couleurAnneau1" value="1">
+            1 Marron
+          </option>
+          <option class="opt rouge" id="couleurAnneau1" value="2">
+            2 Rouge
+          </option>
+          <option class="opt orange" id="couleurAnneau1" value="3">
+            3 Orange
+          </option>
+          <option class="opt jaune" id="couleurAnneau1" value="4">
+            4 Jaune
+          </option>
+          <option class="opt vert" id="couleurAnneau1" value="5">5 Vert</option>
+          <option class="opt bleu" id="couleurAnneau1" value="6">6 bleu</option>
+          <option class="opt violet" id="couleurAnneau1" value="7">
+            7 Violet
+          </option>
+          <option class="opt gris" id="couleurAnneau1" value="8">8 Gris</option>
+          <option class="opt blanc" id="couleurAnneau1" value="9">
+            9 Blanc
+          </option>
+        </select>
+      </div>
+      <div class="deuxiemeCouleur">
+        <label for="anneau2"> 2éme anneau</label>
+        <select name="" id="anneau2" onchange="changeColor()">
+          <option value=""></option>
+          <option class="noir" id="couleurAnneau2" value="0">0 Noir</option>
+          <option class="marron" id="couleurAnneau2" value="1">1 Marron</option>
+          <option class="rouge" id="couleurAnneau2" value="2">2 Rouge</option>
+          <option class="orange" id="couleurAnneau2" value="3">3 Orange</option>
+          <option class="jaune" id="couleurAnneau2" value="4">4 Jaune</option>
+          <option class="vert" id="couleurAnneau2" value="5">5 Vert</option>
+          <option class="bleu" id="couleurAnneau2" value="6">6 bleu</option>
+          <option class="violet" id="couleurAnneau2" value="7">7 Violet</option>
+          <option class="blanc" id="couleurAnneau2" value="9">9 Blanc</option>
+        </select>
+      </div>
+      <div class="troisiemeCouleur">
+        <label for="anneau3"> 3éme anneau</label>
+        <select name="" id="anneau3" onchange="changeColor()">
+          <option value=""></option>
+          <option class="noir" id="couleurAnneau3" value="0">0 Noir</option>
+          <option class="marron" id="couleurAnneau3" value="1">1 Marron</option>
+          <option class="rouge" id="couleurAnneau3" value="2">2 Rouge</option>
+          <option class="orange" id="couleurAnneau3" value="3">3 Orange</option>
+          <option class="jaune" id="couleurAnneau3" value="4">4 Jaune</option>
+          <option class="vert" id="couleurAnneau3" value="5">5 Vert</option>
+          <option class="bleu" id="couleurAnneau3" value="6">6 bleu</option>
+          <option class="violet" id="couleurAnneau3" value="7">7 Violet</option>
+          <option class="gris" id="couleurAnneau3" value="8">8 Gris</option>
+          <option class="blanc" id="couleurAnneau3" value="9">9 Blanc</option>
+        </select>
+      </div>
+      <div class="tolerance">
+        <label for="anneauTolérance"> Tolérance</label>
+        <select name="" id="anneauTolérance" onchange="changeColor()">
+          <option value=""></option>
+          <option class="or" value="5">± 5% Or</option>
+          <option class="argent" value="10">± 10% Argent</option>
+        </select>
+      </div>
+    </div>
+    <br />
+    <div class="sectionResultat">
+      <div class="resultat">
+        <div class="section1">
+          <label class="sectionText" for="resultat_resistance"
+            >Résistance:</label
+          >
+          <input type="text" id="resultat_resistance" />
+          <span>Ohms</span>
+        </div>
+        <br />
+        <div class="section2">
+          <label class="sectionText" for="resultat_tolerance">Tolérance:</label>
+          <input type="text" id="resultat_tolerance" />
+          <span>Ohms</span>
+        </div>
+        <br />
+        <div class="section3">
+          <label class="sectionText" for="resultat_max">Maximum:</label>
+          <input type="text" id="resultat_max" />
+          <span>Ohms</span>
+        </div>
+        <br />
+        <div class="section4">
+          <label class="sectionText" for="resultat_min">Minimum:</label>
+          <input type="text" id="resultat_min" />
+          <span>Ohms</span>
+        </div>
+        <br />
+      </div>
+    </div>
+    <button id="btn">Get Value</button>
+    <script src="app.js"></script>
+  </body>
+  <footer>Made with ❤️ in Gomycode.</footer>
+</html>
